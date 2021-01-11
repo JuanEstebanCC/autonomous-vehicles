@@ -1,0 +1,93 @@
+body{
+    background-image: url(images/tablero.jpg);
+    background-repeat: no-repeat;
+    background-size: 1366px 768px;
+}
+
+.tablero{
+    border: 2px black solid;
+    width: 500px;
+    height: 320px;
+    position: absolute;
+    top: 9%;
+    left: 60%;
+    background-color: white;
+    opacity: 0.8;
+    color: red;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* Buttons of actions */
+.button-frenado-aleatorio{
+   position: absolute;
+   top: 70%;
+   left: 71.5%;
+}
+.button-new-travel{
+    position: absolute;
+    top: 60%;
+    left: 72.5%;
+}
+.button-power{
+   position: absolute;
+   top: 35%;
+   left: 41%;
+}
+.button-estacionario{
+   position: absolute;
+   top: 35%;
+   left: 50%;
+}
+.button-freno-mano{
+   position: absolute;
+   top: 89%;
+   left: 52%;
+}
+.button-closs{
+   position: absolute;
+   top: 71%;
+   left: 34%;
+}
+.button-cambio{
+    position: absolute;
+    top: 65%;
+    left: 55%;  
+}
+.button-acelerar{
+   position: absolute;
+   top: 69%;
+   left: 46%;
+}
+.button-freno{
+   position: absolute;
+   top: 69%;
+   left: 40.5%;
+}
+.button-left{
+   position: absolute;
+   top: 47%;
+   left: 16%;
+}
+.button-right{
+    position: absolute;
+    top: 44%;
+    left: 34%;
+ }
+
+ .count{
+   display: flex;
+   align-items: top;
+   justify-content: center;
+   font-size: 5vw;
+   height: 20vh;
+}
+.stop{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 60vh;
+   height: 50vh;
+   margin-left: 70vh;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="index.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehículo Autonomo</title>
+  </head>
+  <body>
+    <div class="tablero css-typing">
+      <p id="tablero"></p>
+    </div>
+    <div id="stop-counter"></div>
+    <div class="buttons">
+      <div class="button-right">
+        <button
+          type="button"
+          class="btn btn-danger btn-lg"
+          onclick="carro.encenderDireccionalDerecha()"
+        >
+          →
+        </button>
+      </div>
+
+      <div class="button-left">
+        <button
+          type="button"
+          class="btn btn-danger btn-lg"
+          onclick="carro.encenderDireccionalIzquierda()"
+        >
+          ←
+        </button>
+      </div>
+      <div class="button-freno">
+        <button
+          type="button"
+          class="btn btn-danger btn-sm"
+          onclick="carro.pisarFreno();"
+        >
+          FR
+        </button>
+      </div>
+      <div class="button-acelerar">
+        <button
+          type="button"
+          class="btn btn-danger btn-sm"
+          onclick="carro.arranque();"
+        >
+          AC
+        </button>
+      </div>
+      <div class="button-closs">
+        <button
+          type="button"
+          class="btn btn-danger btn-sm"
+          onclick="carro.pisarClutch();"
+        >
+          CL
+        </button>
+      </div>
+      <div class="button-cambio">
+        <button
+          type="button"
+          class="btn btn-danger btn-sm"
+          onclick="carro.cambiarNumCambio();"
+        >
+          &#9881;
+        </button>
+      </div>
+      <div class="button-freno-mano" onclick="carro.activarFrenoMano();">
+        <button type="button" class="btn btn-danger btn-lg">FRM</button>
+      </div>
+      <div class="button-estacionario" onclick="carro.activarEstacionarias()">
+        <button type="button" class="btn btn-danger btn-lg">∆</button>
+      </div>
+      <div class="button-power">
+        <button
+          id="button-power"
+          onclick="carro.estadoVehiculoOn();"
+          type="button"
+          class="btn btn-danger btn-sm"
+        >
+          ON
+        </button>
+      </div>
+      <div class="button-new-travel">
+        <button
+          type="button"
+          id="button-new-travel"
+          onclick="carro.elegirDestino();"
+          class="btn btn-danger btn-lg"
+        >
+          Empezar Viaje
+        </button>
+      </div>
+      <div class="button-frenado-aleatorio">
+        <button
+          type="button"
+          id="button-frenado-aleatorio"
+          onclick="carro.frenadoAletorio();"
+          class="btn btn-danger btn-lg"
+        >
+          Frenado aleatorio
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </body>
+</html>
