@@ -20,11 +20,6 @@ body{
 
 
 /* Buttons of actions */
-.button-frenado-aleatorio{
-   position: absolute;
-   top: 70%;
-   left: 71.5%;
-}
 .button-new-travel{
     position: absolute;
     top: 60%;
